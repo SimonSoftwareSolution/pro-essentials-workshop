@@ -1,6 +1,8 @@
-function move(direction: string, distance: number) {
+function move(direction: Direction, distance: number) {
   // Move the specified distance in the given direction
 }
+
+type Direction = 'up' | 'down' | 'left'
 
 // TESTS
 

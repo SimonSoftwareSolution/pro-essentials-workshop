@@ -12,12 +12,12 @@ type ButtonAttributes = {
 const modifyButtons = (attributes: ButtonAttributes) => {};
 
 const buttonAttributes = Object.freeze({
-  cancel: {
+  cancel: Object.freeze({
     type: "button",
-  },
-  confirm: {
+  }),
+  confirm: Object.freeze({
     type: "button",
-  },
+  }),
 });
 
 modifyButtons(buttonAttributes);

@@ -1,9 +1,15 @@
-interface Scores {}
+import { number } from "zod";
+
+type Scores = {
+  [subject: string] : number
+  math: 95,
+  english: 90,
+}
 
 // @ts-expect-error science is missing!
 const scores: Scores = {
-  math: 95,
-  english: 90,
+ 
+  
 };
 
 scores.athletics = 100;

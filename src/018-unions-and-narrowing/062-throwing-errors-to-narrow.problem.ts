@@ -1,6 +1,7 @@
 import { Equal, Expect } from "@total-typescript/helpers";
 
-const appElement = document.getElementById("app");
+const app = document.getElementById("app");
+const appElement = document ? document : (throw new Error(''));
 
 // How do I ensure that appElement is defined?
 

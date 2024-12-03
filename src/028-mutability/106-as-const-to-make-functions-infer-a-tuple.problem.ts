@@ -7,9 +7,9 @@ const fetchData = async () => {
     return [new Error("Could not fetch data.")];
   }
 
-  const data = await result.json();
+  const data : any = await result.json();
 
-  return [undefined, data];
+  return [undefined, data] as const;
 };
 
 const example = async () => {

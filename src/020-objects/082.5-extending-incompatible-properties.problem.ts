@@ -1,15 +1,13 @@
-type UserPart = {
+interface UserPart  {
   id: string;
   name: string;
   age: number;
 };
 
-type UserPart2 = {
+interface User extends UserPart {
   id: number;
   phone: string;
 };
-
-type User = UserPart & UserPart2;
 
 const user: User = {
   id: "1",
