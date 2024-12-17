@@ -9,6 +9,11 @@ class CanvasNode {
     this.#y = position?.y ?? 0;
   }
 
+  set position (value: {x: number,y: number }) {
+    this.#x = value.x;
+    this.#y = this.#y
+  }
+
   get position() {
     return {
       x: this.#x,
